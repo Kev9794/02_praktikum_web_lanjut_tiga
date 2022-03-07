@@ -38,4 +38,4 @@ Route :: prefix('program')->group(function(){
 
 Route ::get('/about-us', [HalamanAboutUs::class,'about']);
 
-Route ::get('/contact-us', [HalamanContactUs::class,'contact']);
+Route ::resource('/contact-us', HalamanContactUs::class)->only('contact');
